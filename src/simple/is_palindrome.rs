@@ -30,7 +30,7 @@ fn is_palindrome(x: i32) -> bool {
         reverted_number = reverted_number * 10 + x % 10;
         x /= 10;
     }
-    return x == reverted_number || x == reverted_number / 10;
+    x == reverted_number || x == reverted_number / 10
 }
 
 #[test]
